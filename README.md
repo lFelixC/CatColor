@@ -1,9 +1,19 @@
 # CatColor
-# Initialize the class by specifying the number of colors you want to generate. 
-# The second parameter is the random seed. If the seed is not provided, a seed will be automatically generated and can be retrieved after the code runs. 
-c = color(3, 17) 
-random_color, random_seed = c.random_select_color() # Get random colors and seed
-level_color = c.gradient_color(1) # Find bright or dark color by level (1-5, bright -> drak)
-all_color = c.get_all_color()
+## Color Class Usage
+
+This documentation outlines how to use the Color class to generate and manipulate colors.
+
+### Initialization
+
+To start using the Color class, initialize it by specifying the desired number of colors to generate. The constructor accepts two parameters:
+
+1. **Number of Colors**: The first parameter dictates how many colors you want to generate.
+2. **Random Seed**: The second parameter is the random seed. Providing a seed ensures that the color generation is repeatable. If a seed is not provided, one will be automatically generated, and it can be retrieved after the code execution for repeatability purposes.
+
+Example:
+```python
+c = Color(3, 17)
+
+random_color, random_seed = c.random_select_color()
 print(random_color, random_seed)
-print(c.show_color(all_color)) # Show color
+
