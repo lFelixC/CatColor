@@ -20,7 +20,7 @@ c = Color(3, 17)
 To generate random colors and retrieve the used or generated random seed, use the random_select_color method. This method returns a tuple containing the randomly selected colors and the random seed.
 
 Example:
-```python
+```
 random_color, random_seed = c.random_select_color()
 print(random_color, random_seed)
 ```
